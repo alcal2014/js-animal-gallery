@@ -1,6 +1,8 @@
 // Add your code here
 $(document).ready(function() {
 
+	alertify.log('hi');
+
 	$('body').on('click','.filter-button',function() {
 
 	  	$('.' + this.id).toggle();
@@ -36,5 +38,5 @@ $(document).ready(function() {
 	});
 
 
-	
+
 });

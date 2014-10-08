@@ -41,7 +41,16 @@
     </div>
   </div>
   <!-- End site navbar -->
-
+<div class="container">
+    <div id="slides">
+      <img src="http://www.slidesjs.com/img/example-slide-350-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="http://www.slidesjs.com/img/example-slide-350-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="http://www.slidesjs.com/img/example-slide-350-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="http://www.slidesjs.com/img/example-slide-350-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    </div>
+  </div>
 
 
   <!-- Start main content -->
@@ -60,6 +69,15 @@
   </div>
 
   <!-- SlidesJS Required: Link to jQuery -->
-  <script src="resources/jquery-1.9.1.min.js"></script>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
 </body></html>
